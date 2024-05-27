@@ -28,7 +28,6 @@ public class GildedRose {
     }
     
     private func handleIncreaseQuality(for item: Item) {
-        // quality can be 50 max
         guard item.quality < item.maxQuality else { return }
         
         guard item.quality + item.qualityIncreaseValue <= item.maxQuality else {
@@ -55,7 +54,7 @@ public class GildedRose {
         }
     }
     
-    // New feature? removing of items
+    // New feature removing of items
     
     public func removeAllItems() {
         items.removeAll()
